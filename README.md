@@ -1,6 +1,6 @@
 # QR Code Generator
 
-![QR Code Generator Banner](https://via.placeholder.com/800x200/3498db/ffffff?text=Enhanced+QR+Code+Generator)
+![image](https://github.com/user-attachments/assets/c421669f-67c4-463e-825d-ab795e997447)
 
 A clean, feature-rich QR code generator built with HTML, CSS, and vanilla JavaScript. Generate customizable QR codes on the fly with various styling options and download in multiple formats.
 
