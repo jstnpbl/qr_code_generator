@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        
+        <div class="input-group">
+            <label for="content">Enter URL or Text:</label>
+            <input type="text" id="content" placeholder="https://example.com" value="https://example.com">
+            <div id="error-message" class="error-message">Please enter a valid URL or text</div>
+        </div>
+        
+        <div class="options-container">
+            <div class="input-group">
+                <label for="size">QR Code Size:</label>
+                <select id="size">
+                    <option value="128">Small (128x128)</option>
+                    <option value="200" selected>Medium (200x200)</option>
+                    <option value="300">Large (300x300)</option>
+                    <option value="400">Extra Large (400x400)</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="foreground-color">QR Code Color:</label>
+                <input type="color" id="foreground-color" value="#000000">
+            </div>
+            
+            <div class="input-group">
+                <label for="background-color">Background Color:</label>
+                <input type="color" id="background-color" value="#FFFFFF">
+            </div>
+        </div>
+        
+        <div class="options-container">
+            <div class="input-group">
+                <label for="error-correction">Error Correction:</label>
+                <select id="error-correction">
+                    <option value="L">Low (7%)</option>
+                    <option value="M">Medium (15%)</option>
+                    <option value="Q">Quartile (25%)</option>
+                    <option value="H" selected>High (30%)</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="format">Download Format:</label>
+                <select id="format">
+                    <option value="png" selected>PNG</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="svg">SVG</option>
+                </select>
+            </div>
+        </div>
+        
+        <button id="generate-btn">Generate QR Code</button>
+        
+        <div class="qr-container">
+            <div id="qrcode"></div>
+            <div class="button-group">
+                <button id="download-btn" class="action-btn">Download QR Code</button>
+                <button id="share-btn" class="action-btn">Share QR Code</button>
+            </div>
+        </div>
+        
+        <!-- Preview Section -->
+        <div class="preview-section">
+            <h2>Preview on Different Backgrounds</h2>
+            <div class="preview-container">
+                <div class="preview-item light-bg">
+                    <div id="preview-light"></div>
+                    <span>Light Background</span>
+                </div>
+                <div class="preview-item dark-bg">
+                    <div id="preview-dark"></div>
+                    <span>Dark Background</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
