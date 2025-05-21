@@ -1,7 +1,5 @@
 # QR Code Generator
 
-![image](https://github.com/user-attachments/assets/c421669f-67c4-463e-825d-ab795e997447)
-
 A clean, feature-rich QR code generator built with HTML, CSS, and vanilla JavaScript. Generate customizable QR codes on the fly with various styling options and download in multiple formats.
 
 ## ✨ Features
@@ -16,7 +14,7 @@ A clean, feature-rich QR code generator built with HTML, CSS, and vanilla JavaSc
 
 ## 📷 Screenshot
 
-![QR Code Generator Screenshot](https://via.placeholder.com/600x400/f8f9fa/333333?text=Screenshot+Coming+Soon)
+![image](https://github.com/user-attachments/assets/95d42673-750b-4bc0-ae72-ac76bf198b59)
 
 ## 🧰 Technology Stack
 
